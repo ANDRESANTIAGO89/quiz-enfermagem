@@ -156,37 +156,214 @@
 
   <script>
     const quizData = [
-      { question: "1️⃣ O que é o processo de enfermagem?",
-        options: ["Um método para diagnosticar doenças","Um conjunto de etapas para organizar o cuidado de enfermagem","Um protocolo médico de emergência","Um plano de tratamento medicamentoso"],
-        answer: 1 },
+  { 
+    question: "Qual é o maior órgão do corpo humano?", 
+    options: ["Coração", "Pulmão", "Fígado", "Pele"], 
+    answer: 3 
+  },
+  { 
+    question: "Qual sistema do corpo humano é responsável pelo transporte de oxigênio e nutrientes?", 
+    options: ["Sistema respiratório", "Sistema digestório", "Sistema circulatório", "Sistema nervoso"], 
+    answer: 2 
+  },
+  { 
+    question: "Quantos ossos possui o esqueleto humano adulto?", 
+    options: ["206", "210", "198", "180"], 
+    answer: 0 
+  },
+  { 
+    question: "Qual órgão é responsável por bombear o sangue pelo corpo?", 
+    options: ["Pulmão", "Coração", "Rim", "Fígado"], 
+    answer: 1 
+  },
+  { 
+    question: "Qual é a principal função dos pulmões?", 
+    options: ["Filtrar o sangue", "Produzir hormônios", "Realizar a respiração", "Digestionar alimentos"], 
+    answer: 2 
+  },
+  { 
+    question: "Qual sistema é responsável pela coordenação e controle do corpo?", 
+    options: ["Sistema muscular", "Sistema nervoso", "Sistema ósseo", "Sistema digestório"], 
+    answer: 1 
+  },
+  { 
+    question: "Onde ocorre a maior parte da digestão e absorção de nutrientes?", 
+    options: ["Estômago", "Boca", "Intestino delgado", "Intestino grosso"], 
+    answer: 2 
+  },
+  { 
+    question: "Qual é a função principal dos rins?", 
+    options: ["Produzir bile", "Filtrar o sangue e formar a urina", "Controlar os movimentos", "Auxiliar na respiração"], 
+    answer: 1 
+  },
+  { 
+    question: "Qual tipo de músculo é responsável pelos movimentos voluntários?", 
+    options: ["Músculo liso", "Músculo cardíaco", "Músculo esquelético", "Músculo visceral"], 
+    answer: 2 
+  },
+  { 
+    question: "Qual sistema é responsável pela defesa do organismo contra doenças?", 
+    options: ["Sistema imunológico", "Sistema digestório", "Sistema respiratório", "Sistema endócrino"], 
+    answer: 0 
+  }
+];
+[
+  { 
+    question: "Qual é o maior órgão do corpo humano?", 
+    options: ["Coração", "Pulmão", "Fígado", "Pele"], 
+    answer: 3 
+  },
+  { 
+    question: "Qual sistema do corpo humano é responsável pelo transporte de oxigênio e nutrientes?", 
+    options: ["Sistema respiratório", "Sistema digestório", "Sistema circulatório", "Sistema nervoso"], 
+    answer: 2 
+  },
+  { 
+    question: "Quantos ossos possui o esqueleto humano adulto?", 
+    options: ["206", "210", "198", "180"], 
+    answer: 0 
+  },
+  { 
+    question: "Qual órgão é responsável por bombear o sangue pelo corpo?", 
+    options: ["Pulmão", "Coração", "Rim", "Fígado"], 
+    answer: 1 
+  },
+  { 
+    question: "Qual é a principal função dos pulmões?", 
+    options: ["Filtrar o sangue", "Produzir hormônios", "Realizar a respiração", "Digestionar alimentos"], 
+    answer: 2 
+  },
+  { 
+    question: "Qual sistema é responsável pela coordenação e controle do corpo?", 
+    options: ["Sistema muscular", "Sistema nervoso", "Sistema ósseo", "Sistema digestório"], 
+    answer: 1 
+  },
+  { 
+    question: "Onde ocorre a maior parte da digestão e absorção de nutrientes?", 
+    options: ["Estômago", "Boca", "Intestino delgado", "Intestino grosso"], 
+    answer: 2 
+  },
+  { 
+    question: "Qual é a função principal dos rins?", 
+    options: ["Produzir bile", "Filtrar o sangue e formar a urina", "Controlar os movimentos", "Auxiliar na respiração"], 
+    answer: 1 
+  },
+  { 
+    question: "Qual tipo de músculo é responsável pelos movimentos voluntários?", 
+    options: ["Músculo liso", "Músculo cardíaco", "Músculo esquelético", "Músculo visceral"], 
+    answer: 2 
+  },
+  { 
+    question: "Qual sistema é responsável pela defesa do organismo contra doenças?", 
+    options: ["Sistema imunológico", "Sistema digestório", "Sistema respiratório", "Sistema endócrino"], 
+    answer: 0 
+  }
+];
+[
+  { 
+    question: "Qual é o maior órgão do corpo humano?", 
+    options: ["Coração", "Pulmão", "Fígado", "Pele"], 
+    answer: 3 
+  },
+  { 
+    question: "Qual sistema do corpo humano é responsável pelo transporte de oxigênio e nutrientes?", 
+    options: ["Sistema respiratório", "Sistema digestório", "Sistema circulatório", "Sistema nervoso"], 
+    answer: 2 
+  },
+  { 
+    question: "Quantos ossos possui o esqueleto humano adulto?", 
+    options: ["206", "210", "198", "180"], 
+    answer: 0 
+  },
+  { 
+    question: "Qual órgão é responsável por bombear o sangue pelo corpo?", 
+    options: ["Pulmão", "Coração", "Rim", "Fígado"], 
+    answer: 1 
+  },
+  { 
+    question: "Qual é a principal função dos pulmões?", 
+    options: ["Filtrar o sangue", "Produzir hormônios", "Realizar a respiração", "Digestionar alimentos"], 
+    answer: 2 
+  },
+  { 
+    question: "Qual sistema é responsável pela coordenação e controle do corpo?", 
+    options: ["Sistema muscular", "Sistema nervoso", "Sistema ósseo", "Sistema digestório"], 
+    answer: 1 
+  },
+  { 
+    question: "Onde ocorre a maior parte da digestão e absorção de nutrientes?", 
+    options: ["Estômago", "Boca", "Intestino delgado", "Intestino grosso"], 
+    answer: 2 
+  },
+  { 
+    question: "Qual é a função principal dos rins?", 
+    options: ["Produzir bile", "Filtrar o sangue e formar a urina", "Controlar os movimentos", "Auxiliar na respiração"], 
+    answer: 1 
+  },
+  { 
+    question: "Qual tipo de músculo é responsável pelos movimentos voluntários?", 
+    options: ["Músculo liso", "Músculo cardíaco", "Músculo esquelético", "Músculo visceral"], 
+    answer: 2 
+  },
+  { 
+    question: "Qual sistema é responsável pela defesa do organismo contra doenças?", 
+    options: ["Sistema imunológico", "Sistema digestório", "Sistema respiratório", "Sistema endócrino"], 
+    answer: 0 
+  }
+];
+[
+  { 
+    question: "Qual é o maior órgão do corpo humano?", 
+    options: ["Coração", "Pulmão", "Fígado", "Pele"], 
+    answer: 3 
+  },
+  { 
+    question: "Qual sistema do corpo humano é responsável pelo transporte de oxigênio e nutrientes?", 
+    options: ["Sistema respiratório", "Sistema digestório", "Sistema circulatório", "Sistema nervoso"], 
+    answer: 2 
+  },
+  { 
+    question: "Quantos ossos possui o esqueleto humano adulto?", 
+    options: ["206", "210", "198", "180"], 
+    answer: 0 
+  },
+  { 
+    question: "Qual órgão é responsável por bombear o sangue pelo corpo?", 
+    options: ["Pulmão", "Coração", "Rim", "Fígado"], 
+    answer: 1 
+  },
+  { 
+    question: "Qual é a principal função dos pulmões?", 
+    options: ["Filtrar o sangue", "Produzir hormônios", "Realizar a respiração", "Digestionar alimentos"], 
+    answer: 2 
+  },
+  { 
+    question: "Qual sistema é responsável pela coordenação e controle do corpo?", 
+    options: ["Sistema muscular", "Sistema nervoso", "Sistema ósseo", "Sistema digestório"], 
+    answer: 1 
+  },
+  { 
+    question: "Onde ocorre a maior parte da digestão e absorção de nutrientes?", 
+    options: ["Estômago", "Boca", "Intestino delgado", "Intestino grosso"], 
+    answer: 2 
+  },
+  { 
+    question: "Qual é a função principal dos rins?", 
+    options: ["Produzir bile", "Filtrar o sangue e formar a urina", "Controlar os movimentos", "Auxiliar na respiração"], 
+    answer: 1 
+  },
+  { 
+    question: "Qual tipo de músculo é responsável pelos movimentos voluntários?", 
+    options: ["Músculo liso", "Músculo cardíaco", "Músculo esquelético", "Músculo visceral"], 
+    answer: 2 
+  },
+  { 
+    question: "Qual sistema é responsável pela defesa do organismo contra doenças?", 
+    options: ["Sistema imunológico", "Sistema digestório", "Sistema respiratório", "Sistema endócrino"], 
+    answer: 0 
+  }
+];
 
-      { question: "2️⃣ Qual é o órgão que fiscaliza a profissão de enfermagem no Brasil?",
-        options: ["SUS","COFEN e COREN","OMS","ANVISA"], answer: 1 },
-
-      { question: "3️⃣ Qual o local mais seguro para aplicar injeção intramuscular em adultos?",
-        options: ["Músculo ventroglúteo","Músculo deltoide","Músculo reto femoral","Músculo dorsal"], answer: 0 },
-
-      { question: "4️⃣ O que é assepsia?",
-        options: ["Uso de medicamentos","Eliminação de germes na pele","Conjunto de medidas para evitar contaminação","Tratamento de feridas"], answer: 2 },
-
-      { question: "5️⃣ O que é sigilo profissional?",
-        options: ["Divulgar dados do paciente com consentimento","Guardar em segredo as informações obtidas no cuidado ao paciente","Manter registros abertos para consulta pública","Relatar dados de todos os atendimentos"], answer: 1 },
-
-      { question: "6️⃣ O que é o PSF (Programa Saúde da Família)?",
-        options: ["Programa de internação domiciliar","Estratégia de atenção básica voltada à família","Campanha de vacinação nacional","Unidade de atendimento hospitalar"], answer: 1 },
-
-      { question: "7️⃣ Qual é a primeira etapa do processo de enfermagem?",
-        options: ["Planejamento","Diagnóstico","Coleta de dados","Avaliação"], answer: 2 },
-
-      { question: "8️⃣ O que são precauções padrão?",
-        options: ["Medidas específicas para doenças contagiosas","Cuidados aplicados apenas em UTIs","Medidas de prevenção aplicadas a todos os pacientes","Uso de EPI apenas em casos de risco"], answer: 2 },
-
-      { question: "9️⃣ Qual é o principal objetivo da SAE?",
-        options: ["Organizar e documentar o cuidado de enfermagem","Definir protocolos médicos","Substituir a prescrição médica","Registrar consultas particulares"], answer: 0 },
-
-      { question: "🔟 O que é um diagnóstico de enfermagem?",
-        options: ["Identificação da doença","Resposta humana a um problema de saúde","Prescrição médica","Tratamento medicamentoso"], answer: 1 }
-    ];
 
     let currentQuestion = 0;
     let score = 0;
@@ -293,3 +470,4 @@
 
 </body>
 </html>
+
